@@ -25,7 +25,7 @@ export default class TodosList extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:4000/todos')
+        axios.get('https://4000-mspawanranjith-merntodo-avh7wi6ul5n.ws-us54.gitpod.io/todos')
             .then( res => {
                 this.setState({
                     todos: res.data
@@ -35,7 +35,7 @@ export default class TodosList extends Component {
     }
 
     componentDidUpdate() {
-        axios.get('http://localhost:4000/todos')
+        axios.get('https://4000-mspawanranjith-merntodo-avh7wi6ul5n.ws-us54.gitpod.io/todos')
             .then( res => {
                 this.setState({
                     todos: res.data

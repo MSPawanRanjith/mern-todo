@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+mongoose.Promise = global.Promise;
 
 let Todo = new Schema({
     todo_description: {
@@ -16,4 +17,4 @@ let Todo = new Schema({
     }
 });
 
-module.exports = mongoose.model('Todo', Todo);
+module.exports = mongoose.model('tasks', Todo);
